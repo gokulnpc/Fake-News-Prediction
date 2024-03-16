@@ -6,6 +6,9 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 
+import nltk
+nltk.download('stopwords')
+
 # Function to load the model
 @st.cache_data
 def load_model():
